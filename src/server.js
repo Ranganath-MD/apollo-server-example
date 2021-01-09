@@ -21,7 +21,7 @@ mongoose.connect(`mongodb+srv://ranganathmd:uOgKDhu9ZAhmOrnv@developeracc.xzfvx.
   .then(() => {
     console.log(`connected to Database`);
     // Start the server if the db coonection is active
-    server.listen()
+    server.listen({ port: process.env.PORT || 4000 })
       .then(({ port }) => {
         console.log(`apollo-server running on the port ${port}`);
       })
