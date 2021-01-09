@@ -1,0 +1,16 @@
+{
+  "name": "apollo-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Ranganath",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.9.6",
+    "apollo-server": "^2.19.1",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.11.9"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js"
+  }
+}
