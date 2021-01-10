@@ -11,7 +11,9 @@ const server = new ApolloServer({
   dataSources: () => ({
     postsAPI: new PostsAPI(),
     usersAPI: new UsersAPI()
-  })
+  }),
+  introspection: true,
+  playground: true,
 });
 
 mongoose.connect(`mongodb+srv://ranganathmd:uOgKDhu9ZAhmOrnv@developeracc.xzfvx.mongodb.net/graphqlcm?retryWrites=true&w=majority`, {
